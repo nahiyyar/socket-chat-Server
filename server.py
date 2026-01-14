@@ -30,7 +30,7 @@ async def chat(websocket: WebSocket):
         for user, ws in users.items():
             if ws != websocket:
                 await ws.send_text(f"{username} joined")
-
+        
         while True:
             message = await websocket.receive_text()
             timestamp = datetime.now().strftime("%H:%M")
