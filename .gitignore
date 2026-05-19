@@ -4,7 +4,7 @@ __pycache__/
 *.pyo
 *.pyd
 *.pyc
-
+.gitignore
 # Virtual environments
 venv/
 server/
